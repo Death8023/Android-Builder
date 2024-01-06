@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Mi6X",
-      "repo": "https://github.com/Diva-Room/Miku_kernel_xiaomi_wayne",
-      "branch": "TDA",
-      "device": "wayne",
-      "defconfig": "vendor/wayne_defconfig"
+      "name": "alioth_rk",
+      "repo": "https://github.com/Rohail33/Realking_kernel_sm8250.git",
+      "branch": "main",
+      "device": "alioth",
+      "defconfig": "alioth_defconfig"
     },
     "toolchains": [
       {

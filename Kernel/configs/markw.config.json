@@ -3,9 +3,9 @@
     "kernelSource": {
       "name": "alioth_baalam",
       "repo": "https://github.com/LowTension/BAALAM_android_kernel_xiaomi_sm8250.git",
-      "branch": "master",
-      "device": "markw",
-      "defconfig": "markw_defconfig"
+      "branch": "upstream",
+      "device": "alioth",
+      "defconfig": "alioth_defconfig"
     },
     "toolchains": [
       {

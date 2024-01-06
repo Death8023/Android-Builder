@@ -1,8 +1,8 @@
 [
   {
     "kernelSource": {
-      "name": "Xiaomi4",
-      "repo": "https://github.com/SonicBSV/android_kernel_xiaomi_markw-4.9",
+      "name": "alioth_baalam",
+      "repo": "https://github.com/LowTension/BAALAM_android_kernel_xiaomi_sm8250.git",
       "branch": "master",
       "device": "markw",
       "defconfig": "markw_defconfig"
@@ -60,6 +60,6 @@
       "release": true
     },
     "enableKernelSU": true,
-    "enableLXC": true
+    "enableLXC": false
   }
 ]

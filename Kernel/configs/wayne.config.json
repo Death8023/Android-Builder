@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "alioth_rk",
-      "repo": "https://github.com/Rohail33/Realking_kernel_sm8250.git",
+      "repo": "https://github.com/Death8023/Realking_kernel_sm8250.git",
       "branch": "main",
       "device": "alioth",
       "defconfig": "alioth_defconfig"

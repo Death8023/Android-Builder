@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "alioth_baalam",
-      "repo": "https://github.com/LowTension/BAALAM_android_kernel_xiaomi_sm8250.git",
-      "branch": "upstream",
+      "name": "alioth_art",
+      "repo": "https://github.com/Death8023/InfiniR_kernel_alioth.git",
+      "branch": "14.0-alioth",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },

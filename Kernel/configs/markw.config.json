@@ -33,9 +33,9 @@
         ]
 
          {
-    "name": "Clang",
-    "url": "https://github.com/XSans0/WeebX-Clang/releases/download/WeebX-Clang-18.0.0git-release/WeebX-Clang-18.0.0git.tar.gz",
-    "binaryEnv": ["bin"]
+    #"name": "Clang",
+    #"url": "https://github.com/XSans0/WeebX-Clang/releases/download/WeebX-Clang-18.0.0git-release/WeebX-Clang-18.0.0git.tar.gz",
+    #"binaryEnv": ["bin"]
   }
       }
     ],

@@ -1,60 +1,34 @@
 [
   {
     "kernelSource": {
-      "name": "alioth_art",
-      "repo": "https://github.com/Death8023/InfiniR_kernel_alioth.git",
+      "name": "alioth",
+      "repo": "https://codeberg.org/DogDayAndroid/android_kernel_xiaomi_thyme",
       "branch": "14.0-alioth",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
-    "toolchains": [
-      {
-        "repo": "https://github.com/ZyCromerZ/Clang.git",
-        "branch": "main",
-        "name": "clang",
-        "binaryEnv": [
-          "bin"
-        ]
-      },
-      {
-        "repo": "https://github.com/armbian/build",
-        "branch": "main",
-        "name": "aarch64",
-        "binaryEnv": [
-          "bin"
-        ]
-      },
-      {
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
-        "branch": "lineage-19.1",
-        "name": "arm",
-        "binaryEnv": [
-          "bin"
-        ]
-      }
-    ],
     "enableCcache": true,
+    "toolchains": [
+  {
+    "name": "clang",
+    "url": "https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20240315-release/Clang-19.0.0git-20240315.tar.gz",
+    "binaryEnv": ["./bin"]
+  },
+  {
+    "name": "gcc",
+    "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-12.1.0_r27.tar.gz",
+    "binaryEnv": ["bin"]
+  }
+],
     "params": {
-      "ARCH": "arm64",
-      "CC": "clang",
-      "externalCommands": {
-        "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
-        "LD": "ld.lld",
-        "AR": "llvm-ar",
-        "NM": "llvm-nm",
-        "OBJCOPY": "llvm-objcopy",
-        "OBJDUMP": "llvm-objdump",
-        "READELF": "llvm-readelf",
-        "OBJSIZE": "llvm-size",
-        "STRIP": "llvm-strip",
-        "LDGOLD": "aarch64-linux-gnu-ld.gold",
-        "LLVM_AR": "llvm-ar",
-        "LLVM_DIS": "llvm-dis",
-        "CONFIG_THINLTO": ""
-      }
-    },
+  "ARCH": "arm64",
+  "CC": "clang",
+  "externalCommands": {
+    "CLANG_TRIPLE": "aarch64-linux-gnu-",
+    "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+    "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-"
+  }
+},
     "AnyKernel3": {
       "use": true,
       "release": true

@@ -19,7 +19,7 @@
     "binaryEnv": ["bin"]
   }
 ]
-    "enableCcache": true,.
+    "enableCcache": true,
     "params": {
       "ARCH": "arm64",
       "CC": "clang",

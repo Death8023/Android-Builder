@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "alioth",
-      "repo": "https://codeberg.org/DogDayAndroid/android_kernel_xiaomi_thyme",
+      "repo": "https://github.com/Death8023/InfiniR_kernel_alioth.git",
       "branch": "14.0-alioth",
       "device": "alioth",
       "defconfig": "alioth_defconfig"

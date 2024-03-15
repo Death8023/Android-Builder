@@ -7,7 +7,6 @@
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },
-    "enableCcache": true,
     "toolchains": [
   {
     "name": "clang",
@@ -20,6 +19,7 @@
     "binaryEnv": ["bin"]
   }
 ]
+    "enableCcache": true,.
     "params": {
       "ARCH": "arm64",
       "CC": "clang",

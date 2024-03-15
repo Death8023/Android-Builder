@@ -28,12 +28,12 @@
     "CLANG_TRIPLE": "aarch64-linux-gnu-",
     "CROSS_COMPILE": "aarch64-linux-gnu-",
     "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-"
-    "LLVM": "1",
-    "LLVM_IAS": "1",
-    "O": "out",
-    "LD": "ld.lld",
-    "KBUILD_BUILD_USER": "hylab",
-    "KBUILD_BUILD_HOST": "localhost",
+    #"LLVM": "1",
+    #"LLVM_IAS": "1",
+    #"O": "out",
+    #"LD": "ld.lld",
+    #"KBUILD_BUILD_USER": "hylab",
+    #"KBUILD_BUILD_HOST": "localhost",
   }
 },
     "AnyKernel3": {

@@ -9,15 +9,12 @@
     },
     "enableCcache": true,
     "toolchains": [
-      {
-        "repo": "https://github.com/ZyCromerZ/Clang",
-        "branch": "main",
-        "name": "clang",
-        "binaryEnv": [
-          "bin"
-        ]
-      }
-    ],
+  {
+    "name": "clang",
+    "url": "https://github.com/XSans0/WeebX-Clang/releases/download/WeebX-Clang-19.0.0git-release/WeebX-Clang-19.0.0git.tar.gz",
+    "binaryEnv": ["./bin"]
+  }
+]
     "params": {
       "ARCH": "arm64",
       "CC": "clang",

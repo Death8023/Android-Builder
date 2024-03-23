@@ -1,16 +1,16 @@
   [
     {
       "kernelSource": {
-        "name": "InfiniR",
-        "repo": "https://github.com/toraidl/InfiniR_kernel_umi.git",
-        "branch": "14.0-umi",
-        "device": "umi",
-        "defconfig": "umi_defconfig"
+        "name": "Art_millet",
+        "repo": "https://github.com/Death8023/InfiniR_kernel_alioth.git",
+        "branch": "14.0-alioth",
+        "device": "alioth",
+        "defconfig": "alioth_defconfig"
       },
       "toolchains": [
    {
      "name": "clang",
-     "url": "https://github.com/ZyCromerZ/Clang/releases/download/16.0.6-20231003-release/Clang-16.0.6-20231003.tar.gz" ,
+     "url": "https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20240323-release/Clang-19.0.0git-20240323.tar.gz" ,
      "binaryEnv": ["./bin"]
    }
    ],

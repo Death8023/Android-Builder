@@ -325,35 +325,35 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
-      - name: 💙 Upload Image.gz-dtb
-        uses: actions/upload-artifact@v3
-        env:
-          ARCH: ${{ steps.generate-args.outputs.ARCH }}
-        with:
-          name: ${{ env.KERNEL_NAME }}-${{ env.BUILD_DATE }}-Image.gz-dtb
-          path: ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image.gz-dtb
-          if-no-files-found: ignore
-          retention-days: 7
+      #- name: 💙 Upload Image.gz-dtb
+      #  uses: actions/upload-artifact@v3
+      #  env:
+      #    ARCH: ${{ steps.generate-args.outputs.ARCH }}
+      #  with:
+      #    name: ${{ env.KERNEL_NAME }}-${{ env.BUILD_DATE }}-Image.gz-dtb
+      #    path: ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image.gz-dtb
+      #    if-no-files-found: ignore
+      #    retention-days: 7
 
-      - name: 💜 Upload dtb
-        uses: actions/upload-artifact@v3
-        env:
-          ARCH: ${{ steps.generate-args.outputs.ARCH }}
-        with:
-          name: ${{ env.KERNEL_NAME }}-${{ env.BUILD_DATE }}-dtb
-          path: ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtb
-          if-no-files-found: ignore
-          retention-days: 7
+      #- name: 💜 Upload dtb
+      #  uses: actions/upload-artifact@v3
+      #  env:
+      #    ARCH: ${{ steps.generate-args.outputs.ARCH }}
+      #  with:
+      #    name: ${{ env.KERNEL_NAME }}-${{ env.BUILD_DATE }}-dtb
+      #    path: ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtb
+      #    if-no-files-found: ignore
+      #    retention-days: 7
 
-      - name: ❤️ Upload dtbo.img
-        uses: actions/upload-artifact@v3
-        env:
-          ARCH: ${{ steps.generate-args.outputs.ARCH }}
-        with:
-          name: ${{ env.KERNEL_NAME }}-${{ env.BUILD_DATE }}-dtbo.img
-          path: ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo.img
-          if-no-files-found: ignore
-          retention-days: 7
+      #- name: ❤️ Upload dtbo.img
+      #  uses: actions/upload-artifact@v3
+      #  env:
+      #    ARCH: ${{ steps.generate-args.outputs.ARCH }}
+      #  with:
+      #    name: ${{ env.KERNEL_NAME }}-${{ env.BUILD_DATE }}-dtbo.img
+      #    path: ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo.img
+      #    if-no-files-found: ignore
+      #    retention-days: 7
 
       - name: ☢️ Upload output directory
         uses: actions/upload-artifact@v3
@@ -386,8 +386,8 @@ jobs:
           fi
 
 
-          if [ -e "${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image.gz-dtb" ]; then
-            cp -f ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image.gz-dtb ./AnyKernel3/
+         # if [ -e "${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image.gz-dtb" ]; then
+          #  cp -f ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image.gz-dtb ./AnyKernel3/
           else
             if [ -e "${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image" ]; then
               cp -f ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image ./AnyKernel3/
@@ -395,11 +395,11 @@ jobs:
             if [ -e "${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image.gz" ]; then
               cp -f ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image.gz ./AnyKernel3/
             fi
-            if [ -e "${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo" ]; then
-              cp -f ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo ./AnyKernel3/
+           # if [ -e "${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo" ]; then
+            #  cp -f ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo ./AnyKernel3/
             fi
-            if [ -e "${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo.img" ]; then
-              cp -f ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo.img ./AnyKernel3/
+           # if [ -e "${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo.img" ]; then
+            #  cp -f ${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo.img ./AnyKernel3/
             fi
           fi
 

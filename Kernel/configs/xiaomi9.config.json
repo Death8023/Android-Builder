@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Xiaomi9KernelPoweredBySeparate",
-      "repo": "https://github.com/Separatee/AllinOneKernel",
+      "name": "alioth_2",
+      "repo": "https://github.com/Death8023/kernel_xiaomi_sm8250_old",
       "branch": "main",
-      "device": "cepheus",
-      "defconfig": "cepheus_defconfig"
+      "device": "alioth",
+      "defconfig": "alioth_defconfig"
     },
     "toolchains": [
       {

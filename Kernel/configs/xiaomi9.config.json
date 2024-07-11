@@ -15,9 +15,9 @@
         "binaryEnv": ["./bin"]
       },
       {
-        "name": "",
-        "url": "",
-        "binaryEnv": []
+        "name": "clang",
+        "url": "https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20240711-release/Clang-19.0.0git-20240711.tar.gz",
+        "binaryEnv": ["./bin"]
       }
     ],
     "enableCcache": true,

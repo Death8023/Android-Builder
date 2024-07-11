@@ -8,17 +8,17 @@
       "defconfig": "alioth_defconfig"
     },
     "toolchains": [
-      {
-        "name": "clang",
-        "url": "https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20240711-release/Clang-19.0.0git-20240711.tar.gz",
-        "binaryEnv": ["bin"]
-      },
-      {
-        "name": "proton-clang",
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "binaryEnv": ["./bin"]
-      }
+  {
+    "name": "proton-clang",
+    "repo": "https://github.com/kdrag0n/proton-clang",
+    "branch": "master",
+    "binaryEnv": ["bin"]
+  },
+  {
+    "name": "clang",
+    "url": "https://github.com/ZyCromerZ/Clang/releases/download/19.0.0git-20240711-release/Clang-19.0.0git-20240711.tar.gz",
+    "binaryEnv": ["bin"]
+  }
     ],
     "enableCcache": true,
     "params": {

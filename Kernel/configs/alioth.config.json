@@ -1,0 +1,39 @@
+[
+  {
+    "kernelSource": {
+      "name": "alioth_R",
+      "repo": "https://github.com/Death8023/Realking_kernel_sm8250",
+      "branch": "test2",
+      "device": "alioth",
+      "defconfig": "alioth_defconfig"
+    },
+    "toolchains": [
+      {
+        "name": "proton-clang",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "binaryEnv": ["./bin"]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang",
+      "externalCommands": {
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "CLANG_TRIPLE": "aarch64-linux-gnu-"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true
+      "custom": {
+      "repo": "https://github.com/Death8023/AnyKernel3/",
+      "branch": "master"
+      }
+    },
+    "enableKernelSU": false,
+    "enableLXC": false
+  }
+]

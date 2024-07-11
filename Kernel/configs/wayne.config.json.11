@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Mi6X",
-      "repo": "https://github.com/Diva-Room/Miku_kernel_xiaomi_wayne",
-      "branch": "TDA",
-      "device": "wayne",
-      "defconfig": "vendor/wayne_defconfig"
+      "name": "alioth",
+      "repo": "https://github.com/Death8023/kernel_xiaomi_sm8250_old",
+      "branch": "main",
+      "device": "alioth",
+      "defconfig": "alioth_defconfig"
     },
     "toolchains": [
       {
@@ -55,11 +55,15 @@
         "CONFIG_THINLTO": ""
       }
     },
-    "AnyKernel3": {
-      "use": true,
-      "release": true
-    },
-    "enableKernelSU": true,
+   "AnyKernel3": {
+  "use": true,
+  "release": true,
+  "custom": {
+    "repo": "https://github.com/Death8023/AnyKernel3",
+    "branch": "thyme"
+  }
+}
+    "enableKernelSU": false,
     "enableLXC": false
   }
 ]

@@ -28,6 +28,9 @@
     "AnyKernel3": {
       "use": false,
       "release": true
+      "custom": {
+      "repo": "https://github.com/Death8023/AnyKernel3",
+      "branch": "master"
     },
     "enableKernelSU": false,
     "enableLXC": false

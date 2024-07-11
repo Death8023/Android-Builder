@@ -31,7 +31,7 @@
       }
     },
     "AnyKernel3": {
-      "use": false,
+      "use": true,
       "release": true
       "custom": {
       "repo": "https://github.com/Death8023/AnyKernel3",

@@ -13,8 +13,13 @@
         "repo": "https://github.com/kdrag0n/proton-clang",
         "branch": "master",
         "binaryEnv": ["./bin"]
-    }
-      ],
+      },
+      {
+        "name": "",
+        "url": "",
+        "binaryEnv": []
+      }
+    ],
     "enableCcache": true,
     "params": {
       "ARCH": "arm64",
@@ -28,9 +33,6 @@
     "AnyKernel3": {
       "use": true,
       "release": true
-      "custom": {
-      "repo": "https://github.com/Death8023/AnyKernel3",
-      "branch": "master"
     },
     "enableKernelSU": false,
     "enableLXC": false

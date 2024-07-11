@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "alioth_2",
+      "name": "alioth_kernel",
       "repo": "https://github.com/Death8023/kernel_xiaomi_sm8250_old",
       "branch": "main",
       "device": "alioth",
@@ -13,7 +13,8 @@
         "repo": "https://github.com/kdrag0n/proton-clang",
         "branch": "master",
         "binaryEnv": ["./bin"]
-      },
+      }
+    ],
     "enableCcache": true,
     "params": {
       "ARCH": "arm64",

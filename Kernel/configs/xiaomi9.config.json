@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "alioth_kernel",
-      "repo": "https://github.com/Death8023/kernel_xiaomi_sm8250_old",
-      "branch": "main",
+      "repo": "https://github.com/Death8023/kernel_xiaomi_sm8250_MT.git",
+      "branch": "magictime-new",
       "device": "alioth",
       "defconfig": "alioth_defconfig"
     },

@@ -37,11 +37,11 @@
 [
   {
     "kernelSource": {
-      "name": "alioth_N0",
-      "repo": "https://github.com/Death8023/kernel_xiaomi_sm8250_new",
-      "branch": "staging",
+      "name": "alioth_imm",
+      "repo": "https://github.com/Death8023/kernel_xiaomi_sm8250_immens1ty_mod",
+      "branch": "android14-stable-mod",
       "device": "alioth",
-      "defconfig": "vendor/alioth_defconfig"
+      "defconfig": "alioth_defconfig"
     },
     "toolchains": [
       {
